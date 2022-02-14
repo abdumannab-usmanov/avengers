@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Bootstrap/js/bootstrap.bundle.min.js">
+    <script src="./script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        
+        <h1 class="visually-hidden">Movies</h1>
+        
+        <h2 class="text-center my-5">Movies catolog</h2>
+        
+        <div class="row">
+            
+            <div class="col-4">
+                
+                <form class="mb-5"  action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
+                    
+                    <input class="form-control mb-3 p-2" type="text" name="please add your name" placeholder="ave" required>
+                    
+                    <input class="form-control mb-3 p-2" type="text" name="please add your number"  placeholder="5" required>
+                    
+                    <select class="form-select mb-3 p-2" required>
+                        <option selected disabled>All</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>                      
+                    </select>
+                    
+                    <select class="form-select mb-3 p-2" required>
+                        <option selected disabled>Rating (high to low)</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>                      
+                    </select>
+                    
+                    <button class="btn btn-primary w-100 p-2" type="submit">Search</button>
+                    
+                    
+                    <h3 class="mt-5">Bookmarked movies</h3>
+                    
+                    <ul class="list-unstyled">
+                        
+                        <li class="border rounded-top p-3">
+                            <h4 class="fs-5 mb-2">Avengers: Infinity War</h4> 
+                            <button type="reset" class="btn btn-danger">Remove</button>
+                        </li>
+                        
+                        <li class=" border  p-3">
+                            <h4 class="fs-5 mb-2">THe Avengers</h4> 
+                            <button type="reset" class="btn btn-danger">Remove</button>
+                        </li>
+                        
+                        <li class="border rounded-bottom p-3">
+                            <h4 class="fs-5 mb-2">12 Years a slave</h4> 
+                            <button type="reset" class="btn btn-danger">Remove</button>
+                        </li>
+                        
+                    </ul>
+                    
+                    
+                    
+                </form>         
+                
+            </div>
+            
+            <div class="col-8">
+                
+                <h3 class="fs-5">Search results:39</h3>
+                
+                <div class="alert alert-primary d-flex justify-content-between align-items-center" role="alert">
+                    <p class="m-0">Use the form on the left to search for a movie</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-6  ">
+                        
+                        <img class="w-100 rounded-top"  src="./img/avengers.jpg" alt="All super heroes of Marvel" width="350" height="200">
+                        
+                        <div class="pt-4 ps-4 pe-4 pb-4 border border-top-0 border-end-1 border-bottom-1 border-start-1 border-secondary rounded-bottom">
+                            
+                            <h4 class="mb-1">Avengers: Inifinity War</h4>
+                            
+                            <span class="d-block mb-3"><img src="./img/calendar.png" alt="calendar"
+                                width="20" height="20">
+                                2018
+                            </span>
+                            
+                            <span class="d-block mb-3"><img src="./img/star.png" alt="calendar"
+                                width="20" height="20">
+                                8.7
+                            </span>
+                            
+                            <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                            <button style="margin-right:20px; margin-left:20px;" type="button" class="btn btn-outline-info">More Info</button>
+                            <button type="button" class="btn btn-outline-success">Bookmark</button>
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="col-6">
+                        
+                        <img class="w-100 rounded-top"  src="./img/iron-man.jpg" alt="All super heroes of Marvel" width="350" height="200">
+                        
+                        <div class="pt-4 ps-4 pe-4 pb-4 border border-top-0 border-end-1 border-bottom-1 border-start-1 border-secondary rounded-bottom">
+                            
+                            <h4 class="mb-1">The Avengers</h4>
+                            
+                            <span class="d-block mb-3"><img src="./img/calendar.png" alt="calendar"
+                                width="20" height="20">
+                                2012
+                            </span>
+                            
+                            <span class="d-block mb-3"><img src="./img/star.png" alt="calendar"
+                                width="20" height="20">
+                                8.1
+                            </span>
+                            
+                            <button type="button" class="btn btn-outline-primary">Watch trailer</button>
+                            <button style="margin-right:20px; margin-left:20px;" type="button" class="btn btn-outline-info">More Info</button>
+                            <button type="button" class="btn btn-outline-success">Bookmark</button>
+                            
+                        </div>       
+                        
+                    </div>
+                    
+                </div>
+                
+                <nav class="mt-5" aria-label="link is next pages">
+                    <ul class="pagination pagination-md justify-content-center">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            
+            
+        </div>
+        
+    </div>
+</body>
+</html>
